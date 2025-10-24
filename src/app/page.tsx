@@ -68,7 +68,7 @@ export default function Home() {
 
   // Sidebar/Ancillary content (Occupies column 3 on desktop)
   const Sidebar = (
-    <div className="md:col-start-3 md:absolute md:right-0 md:top-10">
+    <div className="md:col-start-3 md:absolute md:right-0 md:top-10 md:w-1/3">
       <h2 className="text-2xl font-semibold text-gray-800 py-5 px-10">
         Topics for This Course
       </h2>
@@ -86,6 +86,13 @@ export default function Home() {
     </section>
   );
 
+  //footer section
+  const Footer = (
+    <footer className='bg-black text-white text-center md:col-span-3 w-full'>
+      Recruitment test project by Karim Radwan. 2025.
+    </footer>
+  );
+
   return (
     <div className="p-4 bg-[#FCFCFD] grid grid-cols-1 grid-rows-1 md:grid-cols-3">
       {Header}
@@ -93,6 +100,7 @@ export default function Home() {
       {LocalNavAndContent}
       {Sidebar}
       {CommentsSection}
+      {Footer}
     </div>
   );
 }

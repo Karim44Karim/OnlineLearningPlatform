@@ -39,7 +39,7 @@ export default function Topics() {
           <AccordionItem value="item-1" className="border">
             {/* Accordion Header */}
             <AccordionTrigger className="border rounded-none px-4 pt-4 text-xl font-semibold text-gray-800">
-              <div className="p-2">Course Introduction</div>
+              <div className="p-2 ">Course Introduction</div>
             </AccordionTrigger>
 
             {/* Accordion Content */}
